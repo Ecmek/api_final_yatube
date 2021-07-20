@@ -7,15 +7,19 @@ User = get_user_model()
 class Group(models.Model):
     title = models.CharField(
         max_length=200, null=False,
-        verbose_name='Название тематики',
+        verbose_name='Название сообщества',
     )
     slug = models.SlugField(
         unique=True,
-        verbose_name='Url адрес тематики',
+        verbose_name='Url адрес сообщества',
     )
     description = models.TextField(
-        verbose_name='Описание тематики',
+        verbose_name='Описание сообщества',
     )
+
+    class Meta:
+        verbose_name = 'Сообщество'
+        verbose_name_plural = 'Сообщества'
 
     def __str__(self):
         return self.title
