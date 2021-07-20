@@ -1,8 +1,7 @@
-
 # Проект YATUBE
 Социальная сеть
 ### Описание
-Благодаря этому проекту можно оздавать посты, оставлять комментарии под постами и подписываться на понравившихся авторов.
+Благодаря этому проекту можно создавать посты, оставлять комментарии под постами и подписываться на понравившихся авторов.
 ### Технологии
 Python, Django, DRF, DRF-simplejwt
 ### Запуск проекта в dev-режиме
@@ -10,14 +9,14 @@ Python, Django, DRF, DRF-simplejwt
 - Установите и активируйте виртуальное окружение:
 ```
 Для пользователей Windows:
-    python -m venv venv
-    source venv/Scripts/activate
-    python -m pip install --upgrade pip
-```  
+python -m venv venv
+source venv/Scripts/activate
+python -m pip install --upgrade pip
+```
 - Установите зависимости из файла requirements.txt
 ```
 pip install -r requirements.txt
-``` 
+```
 - Перейдите в каталог с файлом manage.py выполните команды:
 Выполнить миграции:
 ```
@@ -64,8 +63,8 @@ api/v1/jwt/create/
 Передав в body данные пользователя:
 ```
 {
-    "username": "your_nickname",
-    "password": "your_password"
+"username": "your_nickname",
+"password": "your_password"
 }
 ```
 Получив токен его нужно добавить в headers, после этого вам буду доступны все функции проекта:
