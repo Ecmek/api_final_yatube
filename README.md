@@ -8,7 +8,7 @@ Python, Django, DRF, DRF-simplejwt
 - Клонировать репозиторий и перейти в него в командной строке:
 - Установите и активируйте виртуальное окружение:
 ```
-Для пользователей Windows
+Для пользователей Windows:
     python -m venv venv
     source venv/Scripts/activate
     python -m pip install --upgrade pip
@@ -22,9 +22,24 @@ pip install -r requirements.txt
 ```
 python manage.py migrate
 ```
+Создайте пользователя:
+```
+python manage.py createsuperuser
+```
 Запуск проекта:
 ```
 python manage.py runserver
+```
+### Примеры
+По умолчанию в проект для неавторизованных пользователей доступен только для чтения.
+```
+api/v1/posts/ - получение списка всех постов
+api/v1/groups/ - получение списка всех групп
+api/v1/{post_id}/comments/ - получение списка всех комментариев под определенным постом
+```
+За исключением эндпоинта **follow** доступен только авторизованных пользователей.
+```
+api/v1/follow/
 ```
 ### Авторы
 GerG
