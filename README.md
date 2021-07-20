@@ -67,7 +67,7 @@ api/v1/jwt/create/
     "password": "your_password"
 }
 ```
-Получив токен его нужно добавить в headers:
+Получив токен его нужно добавить в headers, после этого вам буду доступны все функции проекта:
 ```
 Authorization: Bearer {your_token}
 ```
