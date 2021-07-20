@@ -8,7 +8,7 @@ Python, Django, DRF, DRF-simplejwt
 - Клонировать репозиторий и перейти в него в командной строке:
 - Установите и активируйте виртуальное окружение:
 ```
-**Для пользователей Windows**
+Для пользователей Windows
     python -m venv venv
     source venv/Scripts/activate
     python -m pip install --upgrade pip
